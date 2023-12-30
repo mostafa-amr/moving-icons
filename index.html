@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="container">
+      <div id="topp"><img src="TOP.JPG" alt="top" /></div>
+      <div id="icon1"><img src="icon1.gif" alt="icon1" /></div>
+      <div id="icon2"><img src="icon2.gif" alt="icon2" /></div>
+    </section>
+    <div id="button">
+      <input type="button" value="start" onclick="startInterval()" />
+      <input type="button" value="stop" onclick="stopInterval()" />
+      <p>
+        &lt;img src="icon1.gif" style="left: <span id="picon1">0px</span>"/&gt;
+      </p>
+      <p>
+        &lt;img src="icon2.gif" style="left:
+        <span id="picon2">0px</span> "/&gt;
+      </p>
+    </div>
+
+    <!-- somtimes it bugs and dont get the element so i searched and found solution i use defer(executed after the page has finished parsing)  -->
+    <script defer src="script.js"></script>
+  </body>
+</html>
